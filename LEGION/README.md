@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# LEGION - Sistema de Registro y Control de Gastos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
+LEGION es una aplicación web desarrollada para el registro, control y visualización de gastos personales o empresariales por categorías.
 
-## Available Scripts
+El sistema permite registrar gastos manualmente, importar información desde archivos Excel, definir presupuestos por categoría, visualizar comparativas mediante gráficas y exportar reportes.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Características principales
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Registro manual de gastos
+Validación de campos obligatorios
+Validación de fechas futuras
+Presupuesto por categoría
+Alertas al superar el presupuesto
+Importación de gastos desde Excel (.xlsx)
+Exportación de gastos a Excel
+Visualización gráfica de gastos vs presupuesto
+Tabla de historial de gastos
+Backend API REST para almacenamiento temporal
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Tecnologías utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+React.js
+Axios
+Recharts
+XLSX
+File Saver
+CSS
 
-### `npm run build`
+### Backend
+Node.js
+Express.js
+CORS
+Body Parser
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Estructura del proyecto
+bash
+LEGION/
+│
+├── Backend/
+│   ├── server.js
+│   ├── package.json
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   └── index.js
+│   ├── package.json
+│
+└── package.json
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Instalación y ejecución
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clonar repositorio
+bash
+git clone https://github.com/tuusuario/LEGION.git
+cd LEGION
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Ejecutar backend
+bash
+cd Backend
+npm install
+node server.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Servidor disponible en:
+bash
+http://localhost:4000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Ejecutar frontend
+bash
+cd frontend
+npm install
+npm start
 
-## Learn More
+Aplicación disponible en:
+bash
+http://localhost:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Funcionalidades destacadas
 
-### Code Splitting
+### Importación desde Excel
+El sistema permite cargar archivos .xlsx con la siguiente estructura:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Monto | Fecha | Categoría | Descripción |
+|--------|--------|------------|-------------|
 
-### Analyzing the Bundle Size
+### Visualización de datos
+Incluye gráficas dinámicas para comparar el presupuesto asignado y el gasto real por cada categoría.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Categorías soportadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Transporte
+Comida
+Insumos
+Otro
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Autor
 
-### Deployment
+Desarrollado por Anderson Bryan.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Proyecto enfocado en desarrollo web full stack y visualización de datos.
