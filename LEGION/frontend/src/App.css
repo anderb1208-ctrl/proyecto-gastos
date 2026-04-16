@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f7fa;
+  padding: 40px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Inputs y botones */
+input, select, textarea, button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.mensaje {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Colores para alertas */
+.mensaje:contains("superado") {
+  color: #d9534f;
+}
+.mensaje:contains("registrado") {
+  color: #28a745;
+}
+.mensaje:contains("importaron") {
+  color: #17a2b8;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 🎨 Colores por categoría */
+tr.transporte {
+  background-color: #e7f0ff;
+  color: #004085;
+}
+
+tr.comida {
+  background-color: #e9f7ef;
+  color: #155724;
+}
+
+tr.insumos {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+tr.otro {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Gráfico */
+.recharts-wrapper {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Importar archivo */
+input[type="file"] {
+  margin-top: 10px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+}
+
+/* Inputs de presupuesto */
+input[type="number"] {
+  width: 120px;
+  margin-left: 10px;
+}
+
